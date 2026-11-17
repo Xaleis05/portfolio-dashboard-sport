@@ -13,7 +13,7 @@ st.title("Analyse des Licences Sportives en France")
 st.write("Chargement des données en cours...")
 
 # ---> À TOI DE JOUER : Écris la ligne pour charger ton CSV
-df = pd.read_csv("donnees_sport.csv", sep=";", low_memory=False)
+df = pd.read_csv("donnees_sport.zip", sep=";", low_memory=False)
 
 # 5. Affichage d'un message de succès sur le site web (shape = totalité des lignes et colonnes du tableau)
 st.success(f"Données chargées avec succès ! Taille du tableau : {df.shape}")
