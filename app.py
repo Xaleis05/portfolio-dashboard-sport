@@ -16,7 +16,7 @@ st.write("Chargement des données en cours...")
 # On demande à Streamlit de garder ce fichier lourd en mémoire
 @st.cache_data
 def charger_donnees():
-    return pd.read_csv("donnees_sport.zip", sep=";", low_memory=False)
+    return pd.read_csv("donnees_propres.csv.gz", sep=";", low_memory=False)
 
 # On appelle la fonction
 df = charger_donnees()
